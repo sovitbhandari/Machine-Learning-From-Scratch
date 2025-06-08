@@ -39,7 +39,6 @@ print("Mean Absolute error: ", MAE)
 
 
 
-
 #####################
 '''Its always a best practise to first validate using the train test split, and tuning leaf nodes or number of decision tree decide the best model by finding best MAE(p.s: every model give MAE hence calculate) and once you know the final output you
 can then either hard code or pass the value to use the best model for prediction'''
