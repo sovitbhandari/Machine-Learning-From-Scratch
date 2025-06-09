@@ -28,4 +28,4 @@ missing_cols = [col for col in train_X if train_X[col].isnull().any()]
 reduced_train_X = train_X.drop(missing_cols, axis = 1)
 reduced_val_X = val_X.drop(missing_cols, axis = 1)
 
-print("MAE on dropping columns: ",score_dataset(reduced_train_X, reduced_val_X, train_y, val_y))
+print("MAE on dropping columns:  ",score_dataset(reduced_train_X, reduced_val_X, train_y, val_y))
