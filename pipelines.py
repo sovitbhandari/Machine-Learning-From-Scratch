@@ -67,6 +67,7 @@ pre_model_bundle = Pipeline(steps=[('preprocessor', pre_processor), ('model', mo
 
 pre_model_bundle.fit(X_train_new, y_train)
 
-prediction = pre_model_bundle.predict(X_valid)
+# prediction = pre_model_bundle.predict(X_valid)
+prediction = pre_model_bundle.predict(X_test_new)
 
 print('MAE:', mean_absolute_error(y_valid, prediction))
