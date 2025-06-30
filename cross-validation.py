@@ -38,8 +38,8 @@ results = {}
 for i in range(1,9):
     results[50*i] = get_score(50*i)
 
-plt.plot(list(results.keys()), list(results.values()))
-plt.show()
+# plt.plot(list(results.keys()), list(results.values()))
+# plt.show()
 
 
 n_estimators_best = min(results, key=results.get)
