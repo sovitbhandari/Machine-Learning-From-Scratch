@@ -38,12 +38,12 @@ X_train, X_valid = X_train.align(X_valid, join='left', axis=1)
 X_train, X_test = X_train.align(X_test, join='left', axis=1)
 
 # Defining the model
-my_model_1 = XGBRegressor(random_state=0) # Your code here
+my_model = XGBRegressor(n_estimators=1000, learning_rate=0.05) # Your code here
 
 # Fitting the model
-my_model_1.fit(X_train, y_train) # Your code here
+my_model.fit(X_train, y_train) # Your code here
 
-predictions_1 = my_model_1.predict(X_valid)
+predictions_1 = my_model.predict(X_valid)
 
 mae_1 = mean_absolute_error(predictions_1, y_valid)
 
